@@ -21,17 +21,7 @@
       maxLevel: 2,
       repo: '',
       markdown: function(marked) {
-          markrun.setOptions({
-              compile: {
-                  html: function (source, data){
-                      return 	{
-                          lang: "js",
-                          code: source
-                      }
-                  }
-              }
-          });
-          return markrun;
+          return marked;
       }
   }
 </script>
